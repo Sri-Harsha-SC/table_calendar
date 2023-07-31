@@ -64,7 +64,7 @@ class _CalendarCoreState extends State<CalendarCore> {
     super.initState();
     if (widget.pageController != null) {
       if (widget.pageController!.initialPage != 0) {
-        WidgetsBinding.instance!.addPostFrameCallback((t) {
+        WidgetsBinding.instance.addPostFrameCallback((t) {
           widget.pageController!.jumpToPage(widget.pageController!.initialPage);
         });
       }
